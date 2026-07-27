@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Exam Registration Form</title>
+</head>
+<body>
+
+    <h1 align="center">Student Exam Registration Form</h1>
+
+    <form>
+
+        <fieldset>
+            <legend><b>Personal Information</b></legend>
+
+            <label>Full Name:</label><br>
+            <input type="text" name="fullname"><br><br>
+
+            <label>Roll Number:</label><br>
+            <input type="text" name="rollno"><br><br>
+
+            <label>Hall Ticket Number:</label><br>
+            <input type="text" name="hallticket"><br><br>
+
+            <label>Date of Birth:</label><br>
+            <input type="date" name="dob"><br><br>
+
+            <label>Gender:</label><br>
+            <input type="radio" name="gender" value="Male"> Male
+            <input type="radio" name="gender" value="Female"> Female
+            <input type="radio" name="gender" value="Other"> Other
+            <br><br>
+
+            <label>Email:</label><br>
+            <input type="email" name="email"><br><br>
+
+            <label>Mobile Number:</label><br>
+            <input type="tel" name="mobile"><br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Academic Information</b></legend>
+
+            <label>College Name:</label><br>
+            <input type="text" name="college"><br><br>
+
+            <label>Department:</label><br>
+            <select name="department">
+                <option>Select Department</option>
+                <option>Computer Science</option>
+                <option>Data Science</option>
+                <option>Information Technology</option>
+                <option>Electronics</option>
+                <option>Mechanical</option>
+                <option>Civil</option>
+            </select>
+            <br><br>
+
+            <label>Year:</label><br>
+            <select name="year">
+                <option>Select Year</option>
+                <option>1st Year</option>
+                <option>2nd Year</option>
+                <option>3rd Year</option>
+                <option>4th Year</option>
+            </select>
+            <br><br>
+
+            <label>Semester:</label><br>
+            <select name="semester">
+                <option>Select Semester</option>
+                <option>Semester 1</option>
+                <option>Semester 2</option>
+                <option>Semester 3</option>
+                <option>Semester 4</option>
+                <option>Semester 5</option>
+                <option>Semester 6</option>
+                <option>Semester 7</option>
+                <option>Semester 8</option>
+            </select>
+            <br><br>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Exam Details</b></legend>
+
+            <label>Exam Type:</label><br>
+            <input type="radio" name="examtype"> Regular
+            <input type="radio" name="examtype"> Supplementary
+            <br><br>
+
+            <label>Select Subjects:</label><br>
+            <input type="checkbox" name="subject1"> Mathematics<br>
+            <input type="checkbox" name="subject2"> Data Structures<br>
+            <input type="checkbox" name="subject3"> DBMS<br>
+            <input type="checkbox" name="subject4"> Operating Systems<br>
+            <input type="checkbox" name="subject5"> Computer Networks
+            <br><br>
+
+            <label>Exam Center:</label><br>
+            <select name="center">
+                <option>Select Center</option>
+                <option>Hyderabad</option>
+                <option>Warangal</option>
+                <option>Karimnagar</option>
+                <option>Nizamabad</option>
+            </select>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <legend><b>Declaration</b></legend>
+
+            <input type="checkbox" required>
+            I hereby declare that the information provided above is true and correct.
+        </fieldset>
+
+        <br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Reset">
+
+    </form>
+
+</body>
+</html>
